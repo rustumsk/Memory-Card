@@ -1,0 +1,111 @@
+@import '../variables.scss';
+.back{
+  height: 3rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Roboto Slab';
+  color: white;
+  span{
+    border-bottom: solid 2px black;
+    &:hover{
+      border-bottom: solid 2px whitesmoke;
+      color: rgb(233, 82, 188);
+    }
+  }
+}
+@media (min-width: 1284px) {
+    .c-container {
+        padding: 3rem;
+        padding-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 2rem;
+      }
+      
+      .card {
+        height: 18rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        background-image: url(../../styles/pics/cute.jpg);
+        background-color: rgb(197, 135, 216);
+        border: 5px solid black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 12px;
+      }
+}
+@media (max-width: 1283px) {
+    .c-container {
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 2rem;
+      }
+      
+      .card {
+        height: 18rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        background-image: url(../../styles/pics/cute.jpg);
+        background-color: rgb(197, 135, 216);
+        border: 5px solid black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 12px;
+      }
+}
+@media (max-width: 768px) {
+    .c-container {
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2rem;
+      }
+      
+      .card {
+        height: 18rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        background-image: url(../../styles/pics/cute.jpg);
+        background-color: rgb(197, 135, 216);
+        border: 5px solid black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 12px;
+      }
+}
+
+@media (max-width: 480px) {
+    .c-container {
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 2rem;
+        justify-content: center;
+      }
+      
+      .card {
+        height: 18rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        background-image: url(../../styles/pics/cute.jpg);
+        background-color: rgb(197, 135, 216);
+        border: 5px solid black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 12px;
+      }
+}

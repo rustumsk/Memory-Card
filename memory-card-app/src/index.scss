@@ -1,0 +1,17 @@
+@import './styles/variables.scss';
+body{
+    background-color: $primary-color;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    background-image: url('./components/icons/on.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

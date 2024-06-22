@@ -1,0 +1,48 @@
+@import '../variables.scss';
+dialog{
+    position: absolute;
+    gap: 8px;
+    top: 50%;
+    bottom: 50%;
+    height: 50%;
+    width: 60%;
+    animation: 1.5s loading 1 forwards;
+    border: solid .4rem white;
+    border-radius: 12px;
+    background-color: rgb(231, 171, 233);
+    z-index: 3;
+    @keyframes loading {
+        from{
+            transform: translateY(-200px);
+        }
+        70%{
+            transform: translateY(20px);
+        }
+        to{
+            transform: translateY(0px);
+        }
+    }
+    .x{
+        display: flex;
+        justify-content: end;
+        height: 10%;
+        span{
+            background-image: url('../../components/icons/c.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 8%;
+        }
+    }
+    .num{
+        color: black;
+        font-weight: bolder;
+    }
+    .sum{
+        margin-top: 0px;
+    }
+    p{
+        color: white;
+        font-family: 'Roboto Slab';
+        margin-bottom: 1.5rem;
+    }
+}
