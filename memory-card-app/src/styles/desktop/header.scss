@@ -1,6 +1,6 @@
 @import '../variables.scss';
 
-@media(min-width: 1280px) {
+@media(min-width: 1284px) {
     .contain{
         margin: 0;
         padding: 0;
@@ -15,13 +15,13 @@
             display: grid;
             place-content: center;
             justify-content: center;
-            color: white;
+            color: black;
             padding-left: 1rem;
             font-size: 2rem;
             font-family: 'Roboto Slab';
         }
         .count{
-            color: white;
+            color: black;
             display: flex;
             span{
                 flex: 1;

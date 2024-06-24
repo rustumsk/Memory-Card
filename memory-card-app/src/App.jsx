@@ -11,8 +11,8 @@ export default function App(){
     const [modal, setModal] = useState(false);
     const [start, setStart] = useState(false);
     const [backgroundImg, setBackgroundImg] = useState([]);
-    const [pastClick,setPastClick] = useState(" ");
-    const [clicked,setClicked] = useState(" ");
+    const [click,setClick] = useState(" ");
+    const [clicked,setClicked] = useState([]);
     const [trig,setTrig] = useState(false);
     const [count,setCount] = useState(0);
     const [score,setScore] = useState(0);
@@ -21,7 +21,7 @@ export default function App(){
     useEffect(() =>{
         async function sample(){
             const apiKey = "9iJDLQQLcskxa9aVrW9pAOE1SPIWZkMtxYVObD8pNgw68FAFC1wMAqkR";
-            const dat = await fetch('https://api.pexels.com/v1/search?query=cats&perpage=10', {
+            const dat = await fetch('https://api.pexels.com/v1/search?query=cats&perpage=10&', {
                 headers: {
                   Authorization: apiKey,
                 }
@@ -68,8 +68,8 @@ export default function App(){
                             setTrig={setTrig}
                             clicked={clicked}
                             setClicked={setClicked}
-                            pastClick={pastClick}
-                            setPastClick={setPastClick}
+                            click={click}
+                            setClick={setClick}
                             count={count}
                             setCount={setCount}
                             score={score}
